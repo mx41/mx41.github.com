@@ -5,8 +5,8 @@
   "main": "index.html",
   "scripts": {
     "start": "eleventy --serve --watch",
-    "build": "eleventy",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npm run clean && eleventy",
+    "clean": "rm -rf ./_site"
   },
   "repository": {
     "type": "git",
